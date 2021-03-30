@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizarra.css">
+</head>
+<body>
+    <section id="section-area_de_dibujo">
+        <article id="content-box-pizarra">
+            <div class="side-box">
+                <div id="left-box">
+                    <div id="content-input-color">
+                        <i><input type="color" id="edit-color" onchange="colorPincel()" value="#ffffff"></i>
+                    </div>
+                    <div class="content-colors">
+                        <i><input type="button" id="color-1" style="background:#000000"></i>
+                        <i><input type="button" id="color-2" style="background:#99e6ff"></i>
+                        <i><input type="button" id="color-3" style="background:#99ff99"></i>
+                        <i><input type="button" id="color-4" style="background:#ffff99"></i>
+                        <i><input type="button" id="color-5" style="background:#ff9999"></i>
+                        <i><input type="button" id="color-6" style="background:#99b3ff"></i>
+                        <i><input type="button" id="color-7" style="background:#ffffff"></i>
+                        <i><input type="button" id="color-8" style="background:#ffffff"></i>
+                        <i><input type="button" id="color-9" style="background:#ffffff"></i>
+                        <i><input type="button" id="color-10" style="background:#ffffff"></i>
+                        <i><input type="button" id="color-11" style="background:#ffffff"></i>
+                        <i><input type="button" id="color-12" style="background:#ffffff"></i>
+                    </div>
+                    <div class="contente-sizes">
+                        <div>
+                            <input type="button" class="tamaño1" id="size-1">
+                        </div>
+                        <div>
+                            <input type="button" class="tamaño2" id="size-2">
+                        </div>
+                        <div>
+                            <input type="button" class="tamaño3" id="size-3">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="range" id="range-pincel-box" value="10" min="1" max="100" oninput="PincelRange()">
+                    </div>
+                    <div>
+                        <i><input type="button" class="borrar" id="borrar" value="goma"></i>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="border-pizarra">
+                <div>
+
+                </div>
+                <div>
+                    <canvas id="area_de_dibujo" width="800px" height="400px"></canvas>
+                    <canvas id="area_de_dibujo-2" width="800px" height="400px"></canvas>
+                    <canvas id="area_de_dibujo-3" width="800px" height="400px"></canvas>
+                </div>
+            </div>
+            <div class="side-box">
+                <div id="right-box">
+                    <div class="content-ojas">
+                        <div>
+                           <i><input type="button" id="oja-1" style="background:#ffffff"></i> 
+                        </div>
+                        <div>
+                           <i><input type="button" id="oja-2" style="background:#ffffff"></i> 
+                        </div>
+                        <div>
+                           <i><input type="button" id="oja-3" style="background:#ffffff"></i> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <article class="content-style-color">
+            <div id="box-input-clear">
+                <div id="button-reset">
+                    <a id="button-clean" type="button" class="myButton" href="index.html">limpiar</a>
+                </div>
+                <i><input id="imput-color-background" type="color"></i>
+            </div>
+        </article>
+        <script src="js/pincel/pincel-2.js"></script>
+        <script src="js/pincel/pincel.js"></script>
+        <script src="js/pincel/canvio-pizarra.js"></script>
+    </section>
+</body>
+</html>
